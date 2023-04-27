@@ -1,0 +1,203 @@
+1) What is HTML
+HTML: Hyper Text Markup Language
+It is a standard markup language.
+Its like a skeleton is is used to create the webpage.
+it tells the browser how to display the webpage
+Hypertext defines the link between the web pages
+Markup language defines the text document
+
+2) What is an Attribute
+Attribute gives the additional information to the element
+Attribute can be specified at the start tag
+
+3)Write Basic structure of HTML
+<DOCTYPE html>
+<html>
+     <head>
+	<titel>title Name</title>
+     </head>
+     <body>
+	//content
+     </body>
+</html>
+
+4) Create a image in HTML
+<img src="nature.jpg"  width="10px"  height="10px">
+
+5) How to create hyperlink in HTML 
+<a href="http://instagram.com">Instagram</a>
+
+6) How to create /write syntax of table in HTML
+<table>
+<caption>Table Name</caption>
+<tr>
+  <th>Table Head</th>
+</tr>
+<tr>
+    <td>table data</td>
+</tr>
+</table>
+
+7) Create a form 
+<body>
+<form>
+<div>
+<lable>Enter the Name</lable>
+<input type="text" name="name" placeholder="Enter the Name">
+</div>
+<div>
+<lable>Password</lable>
+<input type="text" name="password" placeholder="Password">
+</div>
+<div>
+<lable>Gender</lable>
+<input type="radio" name="gender">male
+<input type="radio" name="gender">female
+<input type="radio" name="gender">other
+</div>
+<div>
+<lable>City</lable>
+<select>-----select city----</select>
+<option>Mysore</option>
+<option>Bangalore</option>
+<option>Udupi</option>
+</select>
+</div>
+<div>
+<lable> date of birth</label>
+<input type="date" name=date of birth">
+</div>
+</form>
+</body>
+
+8) What is CSS
+CSS:Cascading Style Sheet
+It is used to styling the web page layout and design
+It is used to display the web page correctly 
+
+<head>
+<style>
+   selector{
+	    property1: value1;
+	   property2:value2;
+	}
+</style>
+</head>
+
+9) What is External CSS
+It is used to add the CSS into multiple htmlpage
+We can Create CSS in another html page then add that css into orinal html page .   
+filename.css
+
+10) Explain different selector in CSS
+1]Simple selector : Select the element based on id, name
+     * Single selector
+     * Grouping selctor
+     * Class selector
+     * Id selctor
+
+2] Combinator selector: Select the element based on some relationship
+    * Decendent selector(space)  --> div p{
+
+				}
+    * Child selector(>) --> div>p{
+
+			  }
+    * Adjacent sibling selector(+)  --> div+p{ 
+
+				     }
+   * General Sibling selector(~) --> dic~p{
+
+				 }
+
+3]Pseudo-class selector: Select the element based on state
+4]Pseudo-element selector: Select the element based on elemet 
+5]Attribute Selector :Select the element based on some attribute value
+
+11) CSS Box model
+Content- It is used to diplay the content.
+Padding - It used to clear the space around the content. It is transparent
+Border - It display the border arount the content
+Margin - It is used to clear the space around the border. It is transparent
+
+p{
+    padding:30px;
+    border:2px dotted;
+    margin:10px;
+}
+
+12)create image
+flower{
+            position="absolute";
+            left="30px";
+            } 
+         .fruites{
+           position="absolute";
+           right="30px";
+             }
+<body>
+
+      <div> <img src="rcb.jpg", width="50px">  </div>
+     <div class="flower">Flower  </div>
+     <div class="fruits">Fruites </div>
+
+</body>
+
+
+13) What is Javascript
+JavaScrip is a clientside(front-end)scripting language
+That enable you to create dynamicaly updating content,sontrol multimedia.
+
+14)syntax of javascript
+<html>
+<head>
+<title>javascript</title>
+<script>
+function welcome(){
+console.log(welcome)
+}
+welcome()
+</script>
+</head>
+<body>
+<form class="welcome">
+</form>
+</body>
+</html>
+
+15)let, var, const diffrence 
+var can be update
+var can not redeclare
+
+let can not be update
+let can be redeclare
+
+const can not update and redeclare
+
+16)Form validation
+function register(){
+   var name = documnet.getElementbyid("name")
+   console.log(name)
+   console.log(name.value)
+   
+   if(name.value == ''){
+   var nameMessage = documnet.getElementbyid("nameMessage")
+   nameMessage.innerHtml = 'please fill the above block'
+   nameMessage.style.color = 'red'
+   
+   }
+   
+   }
+   
+   
+   <form class="registerd">
+   <div>
+   <label>Name</label>
+   <input type="text" name = "name" id="name">  
+<span id="nameMessage"></span>   
+   </div>
+   
+   <div>
+   <button type="button" onclick="register()">Register</button>
+   </div>
+   </form>
